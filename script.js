@@ -4,6 +4,7 @@ const scoreDisplay = document.getElementById("score");
 const title = document.getElementById("title");
 const attackButton = document.getElementById("attackButton");
 const resetButton = document.getElementById("resetButton");
+const powerButton = document.getElementById("powerButton");
 
 // TODO: create addPoint()
 function addPoint() {
@@ -24,7 +25,7 @@ function resetGame() {
 // updating the display
 function updateDisplay() {
     scoreDisplay.innerText = score;
-    if (score >= 20) {
+    if (score >= 27) {
     title.innerText = "YOU WIN!";
     }
 }
